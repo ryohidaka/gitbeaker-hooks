@@ -40,7 +40,36 @@ ReactDOM.render(
 );
 ```
 
+Use the provided hooks to fetch GitLab data:
+
+- useProjects
+
+```tsx
+import { useProjects } from "gitbeaker-hooks";
+
+function App() {
+  const { projects, isLoading } = useProjects();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  return (
+    <>
+      <ul>
+        {projects?.map((project) => <li key={project.id}>{project.name}</li>)}
+      </ul>
+    </>
+  );
+}
+
+export default App;
+```
+
 ## API
+
+### Hooks
+
+- `useProjects(options)` - Fetch multiple projects.
 
 ### GitbeakerProvider
 
