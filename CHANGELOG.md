@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.0...v0.1.1) (2024-03-31)
+
+
+### Bug Fixes
+
+* Exclude setupTests.ts from build target. ([0218b89](https://github.com/ryohidaka/gitbeaker-hooks/commit/0218b89ecd5f5459a9fdbb7f955d9b7178531641))
+
 ## 0.1.0 (2024-03-31)
 
 
