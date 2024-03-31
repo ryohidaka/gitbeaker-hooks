@@ -2,13 +2,26 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { useProject } from "..";
 
 function App() {
   const [count, setCount] = useState(0);
+  const { projects } = useProject({ owned: true });
 
   return (
     <>
       <div>
+        <section>
+          <h3>Projects</h3>
+          {projects && (
+            <ul>
+              {projects.map((project) => (
+                <li key={project.id}>{project.name}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
