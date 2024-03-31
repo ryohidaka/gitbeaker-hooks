@@ -2,6 +2,12 @@
   "name": "gitbeaker-hooks",
   "version": "0.1.2",
   "description": "React Hooks library for Gitbeaker.",
+  "keywords": [
+    "react",
+    "hooks",
+    "gitlab",
+    "gitbeaker"
+  ],
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
