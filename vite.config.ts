@@ -13,15 +13,13 @@ export default defineConfig({
       formats: ["es"],
       fileName: "index",
     },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+    },
   },
   plugins: [
     dts({
-      exclude: [
-        "src/example/",
-        "src/**/*.test.ts",
-        "src/**/*.test.tsx",
-        "src/setupTests.ts",
-      ],
+      exclude: ["src/example/", "*.test.ts", "*.test.tsx", "src/setupTests.ts"],
     }),
     react(),
     tsconfigPaths(),
@@ -33,5 +31,8 @@ export default defineConfig({
       exclude: ["**/**/index.ts", ".eslintrc.cjs", "src/example"],
     },
     environment: "happy-dom",
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"],
   },
 });
