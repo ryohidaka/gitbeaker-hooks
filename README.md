@@ -9,9 +9,7 @@
 
 ## Overview
 
-React Hooks library for Gitbeaker.
-
-## Notes
+React Hooks library for [Gitbeaker](https://github.com/jdalrymple/gitbeaker).
 
 ## Installation
 
@@ -23,7 +21,36 @@ npm install gitbeaker-hooks
 
 ## Usage
 
+Wrap your app with the `GitbeakerProvider` and provide options object with `token` property.
+
+```tsx
+import { GitbeakerProvider } from "gitbeaker-hooks";
+
+const gitbeakerOptions = {
+  token: "your-access-token",
+};
+
+ReactDOM.render(
+  <React.StrictMode>
+    <GitbeakerProvider options={gitbeakerOptions}>
+      <App />
+    </GitbeakerProvider>
+  </React.StrictMode>,
+  document.getElementById("root"),
+);
+```
+
+## API
+
+### GitbeakerProvider
+
+The `GitbeakerProvider` component should be used to wrap your app and provide the `options` object. The `options` object must include the `token` property.
+
 ## Link
+
+- [Gitbeaker](https://github.com/jdalrymple/gitbeaker)
+- [@gitbeaker/rest](https://www.npmjs.com/package/@gitbeaker/rest)
+- [Docs for GitLab REST API](https://archives.docs.gitlab.com/16.4/ee/api/rest/)
 
 ## License
 
