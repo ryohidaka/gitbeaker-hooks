@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.1...v0.1.2) (2024-03-31)
+
+
+### Bug Fixes
+
+* Fixed a bug that prevented Provider from being used in a vite environment. ([5ab4442](https://github.com/ryohidaka/gitbeaker-hooks/commit/5ab4442b980491818367a7947af48939a5db5498))
+
 ## [0.1.1](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.0...v0.1.1) (2024-03-31)
 
 
