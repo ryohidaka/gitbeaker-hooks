@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/ryohidaka/gitbeaker-hooks#readme",
   "dependencies": {
+    "@gitbeaker/rest": "^40.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
