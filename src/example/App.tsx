@@ -2,13 +2,14 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { useProjects, useRepositoryTrees } from "..";
+import { useBranches, useProjects, useRepositoryTrees } from "..";
 
 function App() {
   const [count, setCount] = useState(0);
   const { projects } = useProjects({ owned: true });
   const projectId = projects ? projects[0].id : "";
   const { repositories } = useRepositoryTrees(projectId);
+  const { branches } = useBranches(projectId);
 
   return (
     <>
@@ -30,6 +31,17 @@ function App() {
             <ul>
               {repositories.map((repository) => (
                 <li key={repository.id}>{repository.name}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+
+        <section>
+          <h3>Branches</h3>
+          {branches && (
+            <ul>
+              {branches.map((branch, index) => (
+                <li key={index}>{branch.name}</li>
               ))}
             </ul>
           )}
