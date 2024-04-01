@@ -43,6 +43,7 @@ ReactDOM.render(
 Use the provided hooks to fetch GitLab data:
 
 - useProjects
+- useRepositoryTrees
 
 ```tsx
 import { useProjects } from "gitbeaker-hooks";
@@ -70,6 +71,8 @@ export default App;
 ### Hooks
 
 - `useProjects(options)` - Fetch multiple projects.
+
+- `useRepositoryTrees(projectId, options)` - Get a list of repository files and directories in a project.
 
 ### GitbeakerProvider
 
