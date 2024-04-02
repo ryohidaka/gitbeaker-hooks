@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.3](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.2...v0.1.3) (2024-04-02)
+
+
+### Features
+
+* Add test for useBranches() ([59dc0fe](https://github.com/ryohidaka/gitbeaker-hooks/commit/59dc0fe0569d8e5c4c0c5125a89b622d34e0e27a))
+* Add test for useRepositoryTrees() ([2806563](https://github.com/ryohidaka/gitbeaker-hooks/commit/2806563039d2e58b0b2b29d105b79a6cebfa3653))
+* Add useBranches(). ([557700e](https://github.com/ryohidaka/gitbeaker-hooks/commit/557700ee1da1ed93e2c21b216454c2f56430c7e4))
+* Add useRepositoryTrees. ([238fd55](https://github.com/ryohidaka/gitbeaker-hooks/commit/238fd55fa04324cf403d85dd7d0119b1404079b3))
+
 ## [0.1.2](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.1...v0.1.2) (2024-03-31)
 
 
