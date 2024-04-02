@@ -44,6 +44,7 @@ Use the provided hooks to fetch GitLab data:
 
 - useProjects
 - useRepositoryTrees
+- useBranches
 
 ```tsx
 import { useProjects } from "gitbeaker-hooks";
@@ -73,6 +74,8 @@ export default App;
 - `useProjects(options)` - Fetch multiple projects.
 
 - `useRepositoryTrees(projectId, options)` - Get a list of repository files and directories in a project.
+
+- `useBranches(projectId, options)` - Get a list of repository branches from a project, sorted by name alphabetically.
 
 ### GitbeakerProvider
 
