@@ -31,8 +31,11 @@ export const useRepositoryTrees = (
     return repositories;
   };
 
+  // Generate a unique key for SWR based on the project ID
+  const key = projectId ? `repositories-${projectId}` : undefined;
+
   // Use SWR to fetch, cache, and revalidate the data
-  const { data: repositories, ...rest } = useSWR("repositories", fetcher);
+  const { data: repositories, ...rest } = useSWR(key, fetcher);
 
   // Return the repositories and other SWR values
   return { repositories, ...rest };
