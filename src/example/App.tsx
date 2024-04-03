@@ -9,7 +9,7 @@ function App() {
   const { projects } = useProjects({ owned: true });
   const projectId = projects ? projects[0].id : "";
   const { repositories } = useRepositoryTrees(projectId);
-  const { branches } = useBranches(projectId);
+  const { branches } = useBranches(projectId, { page: 1, perPage: 5 });
 
   return (
     <>
