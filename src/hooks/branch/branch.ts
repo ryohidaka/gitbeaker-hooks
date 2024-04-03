@@ -27,8 +27,11 @@ export const useBranches = (
     return branches;
   };
 
+  // Generate a unique key for SWR based on the project ID
+  const key = projectId ? `branches-${projectId}` : undefined;
+
   // Use SWR to fetch, cache, and revalidate the data
-  const { data: branches, ...rest } = useSWR("branches", fetcher);
+  const { data: branches, ...rest } = useSWR(key, fetcher);
 
   // Return the branches and other SWR values
   return { branches, ...rest };
