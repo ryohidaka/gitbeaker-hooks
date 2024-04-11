@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.3...v0.2.0) (2024-04-11)
+
+
+### Features
+
+* Set a limit on the number of useBranches() examples. ([e8ff907](https://github.com/ryohidaka/gitbeaker-hooks/commit/e8ff907a75a2e5d3d0eab99f389a820aaa837b74))
+
+
+### Bug Fixes
+
+* Remove formatting options in library mode. ([68c4f52](https://github.com/ryohidaka/gitbeaker-hooks/commit/68c4f5201b05283d76e5c24b3920b8a9032f960d))
+* Revalidate useBranches when updating projectId. ([e8c768b](https://github.com/ryohidaka/gitbeaker-hooks/commit/e8c768b49106d83029624b00ef572e3ae3664123))
+* Revalidate useRepositoryTrees when updating projectId. ([976fcfd](https://github.com/ryohidaka/gitbeaker-hooks/commit/976fcfdd5829e9758614861256dc78558d668d15))
+
 ## [0.1.3](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.2...v0.1.3) (2024-04-02)
 
 
