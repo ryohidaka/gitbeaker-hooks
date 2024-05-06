@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.2.0...v0.2.1) (2024-05-06)
+
+
+### Miscellaneous Chores
+
+* release 0.2.1 ([43c9bbb](https://github.com/ryohidaka/gitbeaker-hooks/commit/43c9bbb0a5921cea0eebd76e8a2ce4c967c64eea))
+
 ## [0.2.0](https://github.com/ryohidaka/gitbeaker-hooks/compare/v0.1.3...v0.2.0) (2024-04-11)
 
 
